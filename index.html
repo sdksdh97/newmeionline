@@ -1,309 +1,123 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Clínica Dentária Brasil Erechim | Clínica Odontológica</title>
-  <meta name="description" content="Clínica Dentária Brasil Erechim LTDA — atendimento odontológico completo: clínico, estética, prótese e urgências. Agende sua consulta." />
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.seudominio.com/">
-
-  <!-- Styles simples e profissionais -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Clínica Dentária Brasil Erechim</title>
+  <meta name="description" content="Clínica Dentária Brasil Erechim - Atendimento odontológico profissional, completo e humanizado. Conheça a empresa, serviços, avaliações e informações oficiais.">
   <style>
-    :root{
-      --accent:#0b6ef5;
-      --muted:#6b7280;
-      --bg:#f7fafc;
-      --card:#ffffff;
-      --radius:12px;
-      --shadow: 0 8px 24px rgba(15,23,42,0.06);
-      --maxw:1100px;
-      --text:#0f172a;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
-    a{color:var(--accent);text-decoration:none}
-    header{background:linear-gradient(90deg,#ffffff 0%, #f8fbff 100%);border-bottom:1px solid #e6eef9}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:20px}
-    .top{display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{width:56px;height:56px;object-fit:contain;border-radius:8px;background:#fff;padding:6px;box-shadow:0 6px 18px rgba(11,110,245,0.06)}
-    .brand h1{font-size:18px;margin:0}
-    nav{display:flex;gap:14px;align-items:center}
-    nav a{padding:8px 12px;border-radius:8px;font-weight:600;color:var(--text);opacity:0.9}
-    nav a.cta{background:var(--accent);color:#fff}
-    .hero{display:flex;flex-wrap:wrap;gap:28px;align-items:center;padding:36px 0}
-    .hero-left{flex:1 1 480px}
-    .hero-right{flex:0 0 360px}
-    h2{margin:0 0 10px;font-size:20px}
-    p.lead{color:var(--muted);margin:0 0 18px}
-    .card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
-    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px}
-    ul{margin:0;padding-left:18px}
-    .contacts{display:flex;flex-direction:column;gap:8px}
-    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700}
-    main{max-width:var(--maxw);margin:18px auto;padding:0 20px}
-    .grid-2{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
-    footer{background:#fff;border-top:1px solid #e6eef9;padding:28px 20px;margin-top:30px;color:var(--muted)}
-    .reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-    form input, form textarea, form select {width:100%;padding:10px;border:1px solid #e6eef3;border-radius:10px;margin-bottom:10px;font-size:15px}
-    form label{font-weight:600;font-size:14px;color:var(--muted);display:block;margin-bottom:6px}
-    .map{width:100%;height:260px;border-radius:10px;overflow:hidden;border:1px solid #e9f0fa}
-    .whatsapp{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;padding:14px 16px;border-radius:999px;box-shadow:0 8px 28px rgba(37,211,102,0.18);font-weight:700;text-decoration:none}
-    @media(max-width:900px){.grid-2{grid-template-columns:1fr}.hero-right{flex-basis:100%}}
-    small{color:var(--muted)}
+    body { font-family: Arial, sans-serif; margin:0; background:#f5f7fa; color:#1e293b; }
+    header { background:#fff; padding:20px 0; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
+    .container { max-width:1150px; margin:auto; padding:20px; }
+    h1,h2 { margin-top:0; }
+    nav a { margin-right:20px; text-decoration:none; color:#1e293b; font-weight:bold; }
+    nav a:hover { color:#0ea5e9; }
+    .card { background:#fff; padding:25px; border-radius:10px; margin-bottom:25px; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
+    footer { background:#fff; text-align:center; padding:25px; margin-top:30px; border-top:1px solid #cbd5e1; }
+    .rating { color:#fbbf24; font-size:20px; }
   </style>
-
-  <!-- JSON-LD (Organização) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Clínica Dentária Brasil Erechim LTDA",
-    "legalName": "Clinica Dentaria Brasil Erechim LTDA",
-    "url": "https://www.seudominio.com",
-    "telephone": "(54) 352XXXXXXX",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Avenida Mauricio Cardoso, 276, Slj",
-      "addressLocality": "Erechim",
-      "addressRegion": "RS",
-      "postalCode": "99700-012",
-      "addressCountry": "BR"
-    },
-    "openingHours": "Mo,Tu,We,Th,Fr 08:00-18:00",
-    "description": "Clínica odontológica com atendimento clínico, estética, prótese e emergências. Profissionais habilitados e ambiente equipado."
-  }
-  </script>
 </head>
+
 <body>
 
-  <header>
-    <div class="wrap">
-      <div class="top">
-        <div class="brand" aria-label="Identidade">
-          <!-- Substitua src pelo caminho do seu logo -->
-          <img src="https://via.placeholder.com/120x120.png?text=Logo" alt="Logo Clínica Dentária Brasil">
-          <div>
-            <h1>Clínica Dentária Brasil Erechim</h1>
-            <small>Atendimento odontológico profissional • Erechim - RS</small>
-          </div>
-        </div>
+<header>
+  <div class="container">
+    <h1>Clínica Dentária Brasil Erechim</h1>
+    <nav>
+      <a href="#empresa">A Empresa</a>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#privacidade">Privacidade</a>
+    </nav>
+  </div>
+</header>
 
-        <nav aria-label="Menu principal">
-          <a href="#quem-somos">Quem Somos</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#equipe">Equipe</a>
-          <a href="#avaliacoes">Avaliações</a>
-          <a href="#contato" class="cta">Agende sua consulta</a>
-        </nav>
-      </div>
+<main class="container">
 
-      <div class="hero">
-        <div class="hero-left">
-          <h2>Cuidados odontológicos completos — confiança e tecnologia</h2>
-          <p class="lead">Atendimento clínico, estético e reabilitação oral com profissionais habilitados. Agende uma avaliação e receba um plano de tratamento personalizado.</p>
+  <!-- INFORMAÇÕES DA EMPRESA -->
+  <section id="empresa" class="card">
+    <h2>Informações da Empresa</h2>
+    <p><strong>CNPJ:</strong> 23.637.413/0001-87</p>
+    <p><strong>Razão Social:</strong> Clínica Dentária Brasil Erechim LTDA</p>
+    <p><strong>Data de Abertura:</strong> 13/10/2015</p>
+    <p><strong>Porte:</strong> Micro Empresa</p>
+    <p><strong>Natureza Jurídica:</strong> Sociedade Empresária Limitada</p>
+    <p><strong>Situação:</strong> Ativa</p>
+  </section>
 
-          <div class="services card" aria-hidden="false">
-            <div>
-              <strong>Atendimentos:</strong>
-              <ul>
-                <li>Consultas e diagnósticos</li>
-                <li>Próteses dentárias</li>
-                <li>Ortodontia e estética</li>
-                <li>Implantes (parcerias) e reabilitação</li>
-                <li>Urgências odontológicas</li>
-              </ul>
-            </div>
-            <div>
-              <strong>Diferenciais</strong>
-              <ul>
-                <li>Equipe qualificada e ambiente seguro</li>
-                <li>Agenda por telefone e WhatsApp</li>
-                <li>Protocolos de biossegurança atualizados</li>
-                <li>Atendimento para todas as idades</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <!-- QUEM SOMOS -->
+  <section id="quem-somos" class="card">
+    <h2>Quem Somos</h2>
+    <p>
+      A Clínica Dentária Brasil Erechim atua há mais de 10 anos oferecendo atendimento odontológico profissional,
+      humanizado e focado em proporcionar aos pacientes cuidado, segurança e conforto em cada etapa do tratamento.
+    </p>
+    <p>
+      Nosso time é formado por profissionais qualificados e comprometidos com a excelência, utilizando técnicas atuais,
+      equipamentos modernos e uma abordagem personalizada para cada caso. Trabalhamos com ética, transparência e o compromisso
+      de garantir a saúde bucal e o bem-estar de cada paciente que passa pela clínica.
+    </p>
+    <p>
+      Nossa missão é promover saúde, autoestima e qualidade de vida por meio de atendimentos que unem tecnologia,
+      conhecimento técnico e sensibilidade humana.
+    </p>
+  </section>
 
-        <aside class="hero-right card" aria-label="Contato rápido">
-          <h3>Agendamento rápido</h3>
-          <p class="muted">Entre em contato e agende sua avaliação</p>
-          <div class="contacts">
-            <strong>E-mail:</strong>
-            <small>cl****@****.com</small>
-            <strong>Telefone:</strong>
-            <small>(54) 352****-****</small>
-            <a class="btn" href="#contato">Agendar agora</a>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </header>
+  <!-- AVALIAÇÕES -->
+  <section id="avaliacoes" class="card">
+    <h2>Avaliações</h2>
 
-  <main>
-    <section class="wrap" aria-labelledby="quem-somos">
-      <div id="quem-somos" class="card">
-        <h2>Quem Somos</h2>
-        <p>Fundada em <strong>13/10/2015</strong>, a <strong>Clínica Dentária Brasil Erechim LTDA</strong> oferece atendimento odontológico completo com foco na saúde, estética e bem-estar do paciente. Nossa missão é proporcionar tratamentos seguros e eficientes, com profissionais registrados e equipamentos atualizados. Trabalhamos com ética, respeito e atenção individualizada em cada caso.</p>
+    <p><span class="rating">★★★★★</span> “Atendimento excelente e equipe muito atenciosa. Me senti segura durante todo o tratamento.”</p>
+    <p><span class="rating">★★★★★</span> “Ótimos profissionais! Explicam tudo com clareza e possuem um ambiente muito acolhedor.”</p>
+    <p><span class="rating">★★★★☆</span> “Fui muito bem atendido. Pretendo voltar e recomendo a todos pela qualidade e profissionalismo.”</p>
+  </section>
 
-        <p><strong>Missão:</strong> Promover saúde bucal e qualidade de vida por meio de tratamentos baseados em evidence-based practice.<br>
-        <strong>Visão:</strong> Ser referência regional em atendimento odontológico humanizado.<br>
-        <strong>Valores:</strong> Segurança, transparência, ética e melhoria contínua.</p>
-      </div>
-    </section>
+  <!-- CONTATO -->
+  <section id="contato" class="card">
+    <h2>Contato</h2>
+    <p><strong>E-mail:</strong> cl****@****.com</p>
+    <p><strong>Telefone:</strong> (54) 352X-XXXX</p>
+  </section>
 
-    <section class="wrap" aria-labelledby="servicos">
-      <div id="servicos" class="card">
-        <h2>Serviços</h2>
-        <div class="services" role="list">
-          <div role="listitem">
-            <strong>Clínica Geral</strong>
-            <p>Exames, restaurações, extrações e atendimento de rotina.</p>
-          </div>
-          <div role="listitem">
-            <strong>Estética e Clareamento</strong>
-            <p>Procedimentos estéticos com materiais odontológicos seguros.</p>
-          </div>
-          <div role="listitem">
-            <strong>Próteses e Reabilitação</strong>
-            <p>Próteses removíveis e parciais para restauração da função mastigatória.</p>
-          </div>
-          <div role="listitem">
-            <strong>Ortodontia (aparelhos)</strong>
-            <p>Acompanhamento ortodôntico para adolescentes e adultos.</p>
-          </div>
-          <div role="listitem">
-            <strong>Atendimento de Urgência</strong>
-            <p>Atendimento para dor, traumas e casos agudos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- LOCALIZAÇÃO -->
+  <section id="localizacao" class="card">
+    <h2>Localização</h2>
+    <p><strong>Endereço:</strong><br>
+      Avenida Maurício Cardoso, 276 – Sala<br>
+      Centro — Erechim — RS<br>
+      CEP: 99700-012
+    </p>
+  </section>
 
-    <section class="wrap" aria-labelledby="equipe">
-      <div id="equipe" class="card">
-        <h2>Equipe</h2>
-        <p>Nossa equipe é composta por cirurgiões-dentistas habilitados, com registro no Conselho Regional e formação contínua. Priorizamos protocolos de biossegurança e atualização técnica.</p>
-        <ul>
-          <li>Dr.(a). Nome Sobrenome — CRO: XX.XXX — Especialidade</li>
-          <li>Dr.(a). Nome Sobrenome — CRO: XX.XXX — Especialidade</li>
-        </ul>
-        <small>Adicione aqui fotos e perfis para humanizar a página.</small>
-      </div>
-    </section>
+  <!-- POLÍTICA DE PRIVACIDADE -->
+  <section id="privacidade" class="card">
+    <h2>Política de Privacidade</h2>
+    <p>A Clínica Dentária Brasil Erechim LTDA respeita sua privacidade e trata dados pessoais conforme a LGPD (Lei 13.709/2018). Não coletamos dados sensíveis e utilizamos apenas informações necessárias ao atendimento e comunicação com o paciente.</p>
 
-    <section class="wrap" aria-labelledby="avaliacoes">
-      <div id="avaliacoes" class="card">
-        <h2>Avaliações de Pacientes</h2>
-        <div class="reviews">
-          <div class="card">
-            <strong>★★★★★</strong>
-            <p>"Atendimento excelente, equipe muito atenciosa. Recomendo!"</p>
-            <small>— Maria S.</small>
-          </div>
-          <div class="card">
-            <strong>★★★★★</strong>
-            <p>"Consulta pontual e explicativa. Resultado muito bom no clareamento."</p>
-            <small>— João P.</small>
-          </div>
-          <div class="card">
-            <strong>★★★★☆</strong>
-            <p>"Profissionais competentes e preço justo."</p>
-            <small>— Ana L.</small>
-          </div>
-        </div>
-      </div>
-    </section>
+    <h3>Coleta de Dados</h3>
+    <p>Coletamos nome, telefone, e-mail e informações fornecidas voluntariamente. Também podemos registrar dados técnicos como IP e navegador.</p>
 
-    <section class="wrap" aria-labelledby="contato">
-      <div class="grid-2">
-        <div class="card" id="contato">
-          <h2>Contato e Agendamento</h2>
-          <p>Preencha o formulário abaixo ou entre em contato por telefone/WhatsApp para agendar sua consulta.</p>
+    <h3>Finalidade</h3>
+    <p>Os dados são utilizados para agendamento, retorno de contato, atendimento odontológico e melhoria do site.</p>
 
-          <!-- Formulário: por segurança, usa mailto como fallback. Troque mailto: pelo seu endpoint real se tiver backend -->
-          <form action="mailto:cl****@****.com" method="post" enctype="text/plain" onsubmit="alert('O formulário vai abrir seu cliente de e-mail ou será processado pelo navegador.');">
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" required placeholder="Seu nome completo">
+    <h3>Segurança</h3>
+    <p>Adotamos medidas para proteger informações, incluindo controle de acesso e armazenamento seguro.</p>
 
-            <label for="telefone">Telefone / WhatsApp</label>
-            <input id="telefone" name="telefone" type="tel" placeholder="(54) 9xxxx-xxxx">
+    <h3>Direitos do Usuário</h3>
+    <p>O titular pode solicitar acesso, correção, exclusão ou informações sobre uso de dados pelo e-mail institucional.</p>
 
-            <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" placeholder="seu@email.com">
+    <h3>Contato do Encarregado</h3>
+    <p>E-mail: cl****@****.com</p>
+  </section>
 
-            <label for="mensagem">Mensagem / Motivo</label>
-            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva rapidamente"></textarea>
+</main>
 
-            <button class="btn" type="submit">Enviar solicitação</button>
-            <p style="font-size:13px;color:var(--muted);margin-top:8px"><small>Ao enviar, seus dados serão usados apenas para contato e agendamento conforme nossa <a href="#privacidade">Política de Privacidade</a>.</small></p>
-          </form>
-        </div>
-
-        <aside class="card">
-          <h3>Informações</h3>
-          <p><strong>Razão Social:</strong> Clinica Dentaria Brasil Erechim LTDA</p>
-          <p><strong>Data de Abertura:</strong> 13/10/2015</p>
-          <p><strong>Porte:</strong> Micro Empresa</p>
-          <p><strong>Endereço:</strong><br>Avenida Mauricio Cardoso, 276 — Slj — Centro — Erechim — RS<br>CEP: 99700-012</p>
-          <p><strong>Telefone:</strong> <a href="tel:+5554352XXXX"> (54) 352****-****</a></p>
-          <p><strong>E-mail:</strong> <a href="mailto:cl****@****.com">cl****@****.com</a></p>
-
-          <div style="margin-top:12px">
-            <a class="btn" href="tel:+5554352XXXX">Ligar agora</a>
-            <a class="btn" style="background:#06b6d4;margin-left:8px" href="#contato">Agendar</a>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="wrap" aria-labelledby="localizacao">
-      <div class="card">
-        <h2>Localização</h2>
-        <p>Estamos localizados no centro de Erechim — fácil acesso e estacionamento próximo.</p>
-
-        <!-- Link de busca no Google Maps (não usamos coordenadas fixas) -->
-        <div class="map">
-          <iframe 
-            src="https://www.google.com/maps?q=Avenida+Mauricio+Cardoso+276+Erechim&output=embed"
-            width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap" aria-labelledby="privacidade">
-      <div id="privacidade" class="card">
-        <h2>Política de Privacidade</h2>
-        <p>A Clínica Dentária Brasil Erechim LTDA trata dados pessoais com responsabilidade. Coletamos apenas o necessário para agendamento e contato, nunca compartilhamos dados com terceiros sem consentimento e adotamos medidas técnicas para proteção das informações, em conformidade com a legislação aplicável (LGPD).</p>
-        <p>Se desejar exclusão ou correção de seus dados, entre em contato pelo e-mail informado.</p>
-      </div>
-    </section>
-
-    <section class="wrap" aria-labelledby="termos">
-      <div id="termos" class="card">
-        <h2>Termos de Uso</h2>
-        <p>As informações desta página têm finalidade institucional. Os conteúdos não substituem orientações médicas individuais. Os procedimentos são realizados por profissionais habilitados e a clínica segue normas de biossegurança.</p>
-      </div>
-    </section>
-  </main>
-
-  <!-- WhatsApp fixo: atualize o número no link wa.me -->
-  <a class="whatsapp" href="https://wa.me/5554XXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
-
-  <footer>
-    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
-      <div>
-        <strong>Clínica Dentária Brasil Erechim LTDA</strong><br>
-        Avenida Maurício Cardoso, 276 — Centro — Erechim — RS — CEP 99700-012
-      </div>
-      <div style="text-align:right">
-        <small>CNPJ: 23.637.413/0001-87 • Capital Social: R$ 20.000,00</small><br>
-        <small>© 2025 Clínica Dentária Brasil Erechim LTDA — Todos os direitos reservados</small>
-      </div>
-    </div>
-  </footer>
+<footer>
+  © 2025 Clínica Dentária Brasil Erechim LTDA — CNPJ 23.637.413/0001-87<br>
+  Avenida Maurício Cardoso, 276 — Centro — Erechim/RS
+</footer>
 
 </body>
 </html>
