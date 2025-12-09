@@ -4,17 +4,89 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Clínica Dentária Brasil Erechim</title>
-  <meta name="description" content="Clínica Dentária Brasil Erechim - Atendimento odontológico profissional, completo e humanizado. Conheça a empresa, serviços, avaliações e informações oficiais.">
+  <meta name="description" content="Clínica Dentária Brasil Erechim - Atendimento odontológico profissional, completo e humanizado.">
+
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f5f7fa; color:#1e293b; }
-    header { background:#fff; padding:20px 0; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
-    .container { max-width:1150px; margin:auto; padding:20px; }
-    h1,h2 { margin-top:0; }
-    nav a { margin-right:20px; text-decoration:none; color:#1e293b; font-weight:bold; }
-    nav a:hover { color:#0ea5e9; }
-    .card { background:#fff; padding:25px; border-radius:10px; margin-bottom:25px; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
-    footer { background:#fff; text-align:center; padding:25px; margin-top:30px; border-top:1px solid #cbd5e1; }
-    .rating { color:#fbbf24; font-size:20px; }
+    :root {
+      --cor-principal: #0a69c7;
+      --cor-secundaria: #0c4a9a;
+      --cor-fundo: #eef4fb;
+      --texto: #1e293b;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin:0;
+      background: var(--cor-fundo);
+      color: var(--texto);
+      line-height: 1.7;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--cor-principal);
+      padding: 25px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      color: white;
+      margin: 0;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #e2e8f0;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    nav a:hover {
+      color: #ffffff;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 2px;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* CARTÕES */
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      border-left: 6px solid var(--cor-principal);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--cor-secundaria);
+      font-size: 24px;
+    }
+
+    footer {
+      background: var(--cor-principal);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      font-size: 15px;
+    }
+
+    .rating {
+      color: #fbbf24;
+      font-size: 21px;
+    }
   </style>
 </head>
 
@@ -24,7 +96,7 @@
   <div class="container">
     <h1>Clínica Dentária Brasil Erechim</h1>
     <nav>
-      <a href="#empresa">A Empresa</a>
+      <a href="#empresa">Empresa</a>
       <a href="#quem-somos">Quem Somos</a>
       <a href="#avaliacoes">Avaliações</a>
       <a href="#contato">Contato</a>
@@ -36,7 +108,7 @@
 
 <main class="container">
 
-  <!-- INFORMAÇÕES DA EMPRESA -->
+  <!-- EMPRESA -->
   <section id="empresa" class="card">
     <h2>Informações da Empresa</h2>
     <p><strong>CNPJ:</strong> 23.637.413/0001-87</p>
@@ -51,17 +123,16 @@
   <section id="quem-somos" class="card">
     <h2>Quem Somos</h2>
     <p>
-      A Clínica Dentária Brasil Erechim atua há mais de 10 anos oferecendo atendimento odontológico profissional,
-      humanizado e focado em proporcionar aos pacientes cuidado, segurança e conforto em cada etapa do tratamento.
+      Há mais de uma década, a Clínica Dentária Brasil Erechim se dedica a proporcionar um atendimento odontológico
+      completo, humanizado e de alta qualidade. Nosso compromisso é com o cuidado integral do paciente, oferecendo
+      tratamentos seguros, modernos e personalizados.
     </p>
     <p>
-      Nosso time é formado por profissionais qualificados e comprometidos com a excelência, utilizando técnicas atuais,
-      equipamentos modernos e uma abordagem personalizada para cada caso. Trabalhamos com ética, transparência e o compromisso
-      de garantir a saúde bucal e o bem-estar de cada paciente que passa pela clínica.
+      Contamos com profissionais experientes e qualificados, equipamentos atualizados e um ambiente confortável,
+      pensado para que cada pessoa tenha a melhor experiência possível.
     </p>
     <p>
-      Nossa missão é promover saúde, autoestima e qualidade de vida por meio de atendimentos que unem tecnologia,
-      conhecimento técnico e sensibilidade humana.
+      Nosso propósito é promover saúde bucal, autoestima e bem-estar, sempre com ética, responsabilidade e transparência.
     </p>
   </section>
 
@@ -69,9 +140,9 @@
   <section id="avaliacoes" class="card">
     <h2>Avaliações</h2>
 
-    <p><span class="rating">★★★★★</span> “Atendimento excelente e equipe muito atenciosa. Me senti segura durante todo o tratamento.”</p>
-    <p><span class="rating">★★★★★</span> “Ótimos profissionais! Explicam tudo com clareza e possuem um ambiente muito acolhedor.”</p>
-    <p><span class="rating">★★★★☆</span> “Fui muito bem atendido. Pretendo voltar e recomendo a todos pela qualidade e profissionalismo.”</p>
+    <p><span class="rating">★★★★★</span> “Atendimento impecável! Me senti muito segura durante todo o procedimento.”</p>
+    <p><span class="rating">★★★★★</span> “Equipe maravilhosa, explicam tudo com clareza e tratam muito bem os pacientes.”</p>
+    <p><span class="rating">★★★★☆</span> “Ótimo atendimento, ambiente limpo e organizado. Recomendo muito!”</p>
   </section>
 
   <!-- CONTATO -->
@@ -84,7 +155,8 @@
   <!-- LOCALIZAÇÃO -->
   <section id="localizacao" class="card">
     <h2>Localização</h2>
-    <p><strong>Endereço:</strong><br>
+    <p>
+      <strong>Endereço:</strong><br>
       Avenida Maurício Cardoso, 276 – Sala<br>
       Centro — Erechim — RS<br>
       CEP: 99700-012
@@ -94,21 +166,25 @@
   <!-- POLÍTICA DE PRIVACIDADE -->
   <section id="privacidade" class="card">
     <h2>Política de Privacidade</h2>
-    <p>A Clínica Dentária Brasil Erechim LTDA respeita sua privacidade e trata dados pessoais conforme a LGPD (Lei 13.709/2018). Não coletamos dados sensíveis e utilizamos apenas informações necessárias ao atendimento e comunicação com o paciente.</p>
+
+    <p>
+      A Clínica Dentária Brasil Erechim LTDA trata dados pessoais conforme a LGPD (Lei 13.709/2018),
+      garantindo segurança, transparência e respeito aos direitos dos titulares.
+    </p>
 
     <h3>Coleta de Dados</h3>
-    <p>Coletamos nome, telefone, e-mail e informações fornecidas voluntariamente. Também podemos registrar dados técnicos como IP e navegador.</p>
+    <p>Coletamos nome, telefone, e-mail e informações enviadas voluntariamente. Dados técnicos como IP podem ser registrados automaticamente.</p>
 
     <h3>Finalidade</h3>
-    <p>Os dados são utilizados para agendamento, retorno de contato, atendimento odontológico e melhoria do site.</p>
+    <p>Utilizamos os dados exclusivamente para comunicação, agendamento e melhoria dos atendimentos.</p>
 
     <h3>Segurança</h3>
-    <p>Adotamos medidas para proteger informações, incluindo controle de acesso e armazenamento seguro.</p>
+    <p>Adotamos medidas de proteção, como armazenamento seguro e controle restrito de acesso.</p>
 
-    <h3>Direitos do Usuário</h3>
-    <p>O titular pode solicitar acesso, correção, exclusão ou informações sobre uso de dados pelo e-mail institucional.</p>
+    <h3>Direitos do Titular</h3>
+    <p>Você pode solicitar exclusão, correção ou consulta sobre seus dados pelo e-mail institucional.</p>
 
-    <h3>Contato do Encarregado</h3>
+    <h3>Contato</h3>
     <p>E-mail: cl****@****.com</p>
   </section>
 
